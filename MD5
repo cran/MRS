@@ -1,13 +1,12 @@
-7fec8a5e97a0b1cc5b937203364c3f95 *DESCRIPTION
+fc98dcfa4e63b6802afb35201ed26e8a *DESCRIPTION
 7853d4303a855ecbaaa5b9d4fbbd12f7 *NAMESPACE
-d38a6e1c0e66e0d1b84b17f095fbaa9e *R/RcppExports.R
-61c8ae90b2e5bbda8eef0104d1fbaabb *R/mrs.R
+ca798a99f6bb3e2b0f271b1f7e84ad04 *R/RcppExports.R
+d194db31f3e60ba5dfac4eb3160d8b61 *R/mrs.R
 661143b880cece7605b5ca716ea72746 *R/plot1D.R
 3e77f9061c6a0f706845df0d50a4cf12 *R/plot2D.R
 23a030862802e0637228c190183bb4e8 *R/plotTree.R
 72f6b2d94f6b61b16f6d91e1ba824f5c *R/print.summary.mrs.R
 7484c9f564a8554f408327477e6b03bc *R/summary.mrs.R
-a0606a0402c156dae9a4c8800bd924d5 *man/MRS-package.Rd
 0efd8406f3108466ac3f40d9056a995d *man/mrs.Rd
 328b103b99de0599b91691ae956fa808 *man/plot1D.Rd
 9db30703b8af96ed1970ff301eedd1a7 *man/plot2D.Rd
@@ -16,8 +15,8 @@ a0606a0402c156dae9a4c8800bd924d5 *man/MRS-package.Rd
 68ce53125a40a800bd9021e77bdcb5d6 *man/summary.mrs.Rd
 2a6f9e9e044a78154d3cfda5936d6f48 *src/Makevars
 8d46d69896a1f1d31ed76035a0e49d67 *src/Makevars.win
-5e331ca6b3e686ab2d2ebcd8a9d0ebe3 *src/RcppExports.cpp
-3b146ac1c5bc3c8daeb6cd7b275e6a3a *src/helpers.cpp
+1831036f82ea8c370dff2cac994c3d70 *src/RcppExports.cpp
+7e02c6e5986b75227bb25d52eafec7bd *src/helpers.cpp
 1e3b570d39ca29f352e2919b71920561 *src/helpers.h
 255ddb87eb92dcfc54e6095407b073f7 *src/main.cpp
 8858937451d8c6ae3e65629f36631c86 *src/recursion.cpp

@@ -29,3 +29,4 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+
