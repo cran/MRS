@@ -600,7 +600,7 @@ arma::vec class_tree::compute_m_anova(INDEX_TYPE& I, int level, int d)
     for(int g = 0; g < n_grid; g++)
     {
       double tt = newtonMethod(data_0, data_1, nu_vec(g), alpha);
-      if(isnan(tt))
+      if(ISNAN(tt))
       {
         for(int h = 0; h < n_grid_theta; h++)
           output(0) = log_exp_x_plus_exp_y( output(0), 
@@ -637,7 +637,7 @@ arma::vec class_tree::compute_m_anova(INDEX_TYPE& I, int level, int d)
       for(int g = 0; g < n_grid; g++)
       {
         double tt = newtonMethod(temp_data_0, temp_data_1, nu_vec(g), alpha);        
-        if(isnan(tt))
+        if(ISNAN(tt))
         {
           for(int h = 0; h < n_grid_theta; h++)
             temp_mat(j,g) = log_exp_x_plus_exp_y( temp_mat(j,g), 

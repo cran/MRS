@@ -15,11 +15,11 @@ const int one_seq_bin = 2047;   // 11111111111 in binary
 double log_exp_x_plus_exp_y(double x, double y) 
 {
   double result;
-  if( ( isinf( fabs(x) ) == 1 ) && ( isinf( fabs(y) ) == 0 )  )
+  if( ( std::isinf( fabs(x) ) == 1 ) && ( std::isinf( fabs(y) ) == 0 )  )
     result = y;
-  else if ( ( isinf( fabs(x) ) == 0 ) && ( isinf( fabs(y) ) == 1 )  )
+  else if ( ( std::isinf( fabs(x) ) == 0 ) && ( std::isinf( fabs(y) ) == 1 )  )
     result = x;
-  else if ( ( isinf( fabs(x) ) == 1 ) && ( isinf( fabs(y) ) == 1 )  )
+  else if ( ( std::isinf( fabs(x) ) == 1 ) && ( std::isinf( fabs(y) ) == 1 )  )
     result = x;
   else if ( x - y >= 100 ) result = x;
   else if ( x - y <= -100 ) result = y;

@@ -1,4 +1,4 @@
-fc98dcfa4e63b6802afb35201ed26e8a *DESCRIPTION
+a4665765352696a2ffd0decdb9473a6d *DESCRIPTION
 7853d4303a855ecbaaa5b9d4fbbd12f7 *NAMESPACE
 ca798a99f6bb3e2b0f271b1f7e84ad04 *R/RcppExports.R
 d194db31f3e60ba5dfac4eb3160d8b61 *R/mrs.R
@@ -16,8 +16,8 @@ d194db31f3e60ba5dfac4eb3160d8b61 *R/mrs.R
 2a6f9e9e044a78154d3cfda5936d6f48 *src/Makevars
 8d46d69896a1f1d31ed76035a0e49d67 *src/Makevars.win
 1831036f82ea8c370dff2cac994c3d70 *src/RcppExports.cpp
-7e02c6e5986b75227bb25d52eafec7bd *src/helpers.cpp
+a7759b4012d12cde13d0e4df8ebcae7d *src/helpers.cpp
 1e3b570d39ca29f352e2919b71920561 *src/helpers.h
 255ddb87eb92dcfc54e6095407b073f7 *src/main.cpp
-8858937451d8c6ae3e65629f36631c86 *src/recursion.cpp
+1a778209f55e772e9fb7d4c7e27af037 *src/recursion.cpp
 a3b1a12697aa2039fc499ba8d6827252 *src/recursion.h
