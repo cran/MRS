@@ -22,9 +22,16 @@
 #'  The default is to plot all regions. 
 #' @param legend Color legend for type. Default is \code{legend = FALSE}.
 #' @param main Overall title for the legend.  
-#' @references Soriano J. and Ma L. (2014). Multi-resolution two-sample comparison 
-#' through the divide-merge Markov tree. \emph{Preprint}. 
-#'  \url{http://arxiv.org/abs/1404.3753}
+#' @param abs If \code{TRUE}, plot the absolute value of the effect size. 
+#' Only used when \code{type = "eff"}.
+#' @references Soriano J. and Ma L. (2016). 
+#' Probabilistic multi-resolution scanning for two-sample differences. 
+#'  \emph{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}. 
+#'  \url{http://onlinelibrary.wiley.com/doi/10.1111/rssb.12180/abstract}
+#' @references Ma L. and Soriano J. (2016). 
+#' Analysis of distributional variation through multi-scale Beta-Binomial modeling. 
+#'  \emph{arXiv}. 
+#'  \url{http://arxiv.org/abs/1604.01443}
 #' @export
 #' @examples
 #' set.seed(1)
@@ -59,8 +66,8 @@ plot2D = function(  ans,
                     levels = sort(unique(ans$RepresentativeTree$Levels)),
                     regions = rep(1,length(ans$RepresentativeTree$Levels)),
                     legend = FALSE,
-                    main = "default"
-                ) 
+                    main = "default",
+                    abs = TRUE ) 
 { 
   if(class(ans)!="mrs")
   {
@@ -131,9 +138,18 @@ plot2D = function(  ans,
   }
   else if(type == "eff")
   {
-    names = abs(ans$RepresentativeTree$EffectSizes[,group])
-    col_range <- colorRampPalette(c("white","darkred"))(100)
-    col = col_range[ ceiling( names/max(names + 0.01)*99 + 1) ]
+
+    if (abs == TRUE) {
+      names = abs(ans$RepresentativeTree$EffectSizes[,group])        
+      col_range <- colorRampPalette(c("white","darkred"))(100)
+      col = col_range[ ceiling( names/max(names + 0.01)*99 + 1) ]
+    } else {
+      names = ans$RepresentativeTree$EffectSizes[, group]
+      col_range <- c(colorRampPalette(c("red","white"))(50), 
+                     colorRampPalette(c("white","dodgerblue"))(50))
+      col = col_range[ ceiling(names/max(abs(names)+0.01)*100/2+50) ]     
+    }      
+    
     if(main == "default")
       main = paste("Eff. Size \n Group", group)
   }
@@ -222,9 +238,17 @@ plot2D = function(  ans,
     
     if(type == "prob")
       mtext( format( round(seq(0,1,by=0.2), digits=1), nsmall=1) ,side=2,at=seq(1,2,by=.2),las=2,cex=1, line=0)
-    if(type == "eff")
-      mtext( format(round(seq( 0, max(names) , length=5), digits=1), nsmall=1),
-             side=2,at=seq(1,2,length=5),las=2,cex=1, line=0)
+    if(type == "eff") {
+      if (abs == TRUE) {
+        mtext( format(round(seq( 0, max(abs(names)) , length=5), digits=1), nsmall=1),
+               side=2,at=seq(1,2,length=5),las=2,cex=1, line=0)        
+      } else {
+        mtext( format(round(seq(-max(abs(names)), max(abs(names)) , length=5), digits=1), nsmall=1),
+               side=2,at=seq(1,2,length=5),las=2,cex=1, line=0)        
+      }
+
+    }
+
     
   }
   par(.pardefault)   

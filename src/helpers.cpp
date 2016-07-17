@@ -263,8 +263,9 @@ INDEX_TYPE get_next_node(INDEX_TYPE& I, int p, int level)
 
 
 
-double newtonMethod(arma::vec data_0, arma::vec data_1, double nu, double alpha)
+arma::vec newtonMethod(arma::vec data_0, arma::vec data_1, double nu, double alpha)
 {
+  vec output(2);
   int N = data_0.n_elem;
   double theta0 = exp( log(sum(data_0) + alpha) - log( sum(data_0) + sum(data_1) + 2*alpha ) );
   double theta1;
@@ -312,7 +313,9 @@ double newtonMethod(arma::vec data_0, arma::vec data_1, double nu, double alpha)
   if(!foundSol)
      cout << "convergence issue with Newton's method" << endl;
   */
-  return  y + 0.5 * log( 2.0 * M_PI ) - 0.5*log( fabs(ysecond) );
+  output(0) = theta0;
+  output(1) = y + 0.5 * log( 2.0 * M_PI ) - 0.5*log( fabs(ysecond) );
+  return output;
 }
  
 

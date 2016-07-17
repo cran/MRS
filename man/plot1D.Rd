@@ -5,7 +5,8 @@
 \title{Plot regions of the representative tree in 1D}
 \usage{
 plot1D(ans, type = "prob", group = 1, dim = 1, regions = rep(1,
-  length(ans$RepresentativeTree$Levels)), legend = FALSE, main = "default")
+  length(ans$RepresentativeTree$Levels)), legend = FALSE, main = "default",
+  abs = TRUE)
 }
 \arguments{
 \item{ans}{An \code{mrs} object.}
@@ -26,6 +27,9 @@ The default is to plot all regions.}
 \item{legend}{Color legend for type. Default is \code{legend = FALSE}.}
 
 \item{main}{Overall title for the plot.}
+
+\item{abs}{If \code{TRUE}, plot the absolute value of the effect size.
+Only used when \code{type = "eff"}.}
 }
 \description{
 This function visualizes the regions of the representative tree
@@ -53,8 +57,14 @@ plot1D(ans, type = "prob")
 plot1D(ans, type = "eff")
 }
 \references{
-Soriano J. and Ma L. (2014). Multi-resolution two-sample comparison
-through the divide-merge Markov tree. \emph{Preprint}.
- \url{http://arxiv.org/abs/1404.3753}
+Soriano J. and Ma L. (2016).
+Probabilistic multi-resolution scanning for two-sample differences.
+ \emph{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}.
+ \url{http://onlinelibrary.wiley.com/doi/10.1111/rssb.12180/abstract}
+
+Ma L. and Soriano J. (2016).
+Analysis of distributional variation through multi-scale Beta-Binomial modeling.
+ \emph{arXiv}.
+ \url{http://arxiv.org/abs/1604.01443}
 }
 

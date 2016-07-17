@@ -5,7 +5,7 @@
 \title{Plot nodes of the representative tree}
 \usage{
 plotTree(ans, type = "prob", group = 1, legend = FALSE, main = "",
-  node.size = 5)
+  node.size = 5, abs = TRUE)
 }
 \arguments{
 \item{ans}{A \code{mrs} object.}
@@ -20,6 +20,9 @@ The options are \code{type = c("eff", "prob")}.}
 \item{main}{Main title. Default is \code{main = ""}.}
 
 \item{node.size}{Size of the nodes. Default is \code{node.size = 5}.}
+
+\item{abs}{If \code{TRUE}, plot the absolute value of the effect size.
+Only used when \code{type = "eff"}.}
 }
 \description{
 This function visualizes the representative tree of the output of the \code{\link{mrs}} function.
@@ -51,8 +54,14 @@ ans = mrs(X, G, K=8)
 plotTree(ans, type = "prob", legend = TRUE)
 }
 \references{
-Soriano J. and Ma L. (2014). Multi-resolution two-sample comparison
-through the divide-merge Markov tree. \emph{Preprint}.
- \url{http://arxiv.org/abs/1404.3753}
+Soriano J. and Ma L. (2016).
+Probabilistic multi-resolution scanning for two-sample differences.
+ \emph{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}.
+ \url{http://onlinelibrary.wiley.com/doi/10.1111/rssb.12180/abstract}
+
+Ma L. and Soriano J. (2016).
+Analysis of distributional variation through multi-scale Beta-Binomial modeling.
+ \emph{arXiv}.
+ \url{http://arxiv.org/abs/1604.01443}
 }
 
