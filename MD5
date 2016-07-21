@@ -1,4 +1,4 @@
-3876e70bc2ed38b4dda216852cabce93 *DESCRIPTION
+7866a4d18d2b671495dd52d90a32c88c *DESCRIPTION
 ed427c741b2520d413f0d6fc51e7bafc *NAMESPACE
 f45721b55868ccee94458cc905b2312d *R/RcppExports.R
 2b1c8faa49ba6b7c82c2af47cde3d326 *R/andova.R
@@ -21,5 +21,5 @@ f7257a42485c476d29fc610124cc907f *man/print.summary.mrs.Rd
 3a0d4b6880d6ac548a594a69f559970f *src/helpers.cpp
 f3ac228100b04fab98d0870f3ad8019b *src/helpers.h
 f82a99a708bc563877d65c51dc8403c6 *src/main.cpp
-b904402b2bb6ac3fa65b42b0d250d85b *src/recursion.cpp
+1a3f3997ded97b05a7484b76b25aa5cb *src/recursion.cpp
 8c6fb3b34dd9e0962e53ea014f8f8ab5 *src/recursion.h
