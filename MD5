@@ -1,6 +1,6 @@
-7866a4d18d2b671495dd52d90a32c88c *DESCRIPTION
-ed427c741b2520d413f0d6fc51e7bafc *NAMESPACE
-f45721b55868ccee94458cc905b2312d *R/RcppExports.R
+19d45930a33cf37d17caf0bd5db5dc21 *DESCRIPTION
+797a28df34640e8bbf1729585addebe0 *NAMESPACE
+da1a34e772bcdaba7b1f50afe8020aaa *R/RcppExports.R
 2b1c8faa49ba6b7c82c2af47cde3d326 *R/andova.R
 36861e3fd6fdf5c4bcdf79463ecb8da1 *R/mrs.R
 eda10fb8d85e6ba224c899205c33897b *R/plot1D.R
@@ -17,7 +17,7 @@ f7257a42485c476d29fc610124cc907f *man/print.summary.mrs.Rd
 5b0a277487e92735a9f18fbe098a1374 *man/summary.mrs.Rd
 2a6f9e9e044a78154d3cfda5936d6f48 *src/Makevars
 8d46d69896a1f1d31ed76035a0e49d67 *src/Makevars.win
-40b2574c0acb1cd54f2188878f513c73 *src/RcppExports.cpp
+b437c86f8f6d97c9926325d407e5b914 *src/RcppExports.cpp
 3a0d4b6880d6ac548a594a69f559970f *src/helpers.cpp
 f3ac228100b04fab98d0870f3ad8019b *src/helpers.h
 f82a99a708bc563877d65c51dc8403c6 *src/main.cpp

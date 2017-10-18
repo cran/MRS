@@ -1,8 +1,8 @@
 Package: MRS
 Type: Package
 Title: Multi-Resolution Scanning for Cross-Sample Differences
-Version: 1.2.1
-Date: 2016-07-17
+Version: 1.2.2
+Date: 2017-10-17
 Author: Jacopo Soriano and Li Ma
 Maintainer: Jacopo Soriano <jsoriano.stat@gmail.com>
 Description: An implementation of the MRS algorithm for comparison across distributions. 
@@ -12,10 +12,10 @@ Description: An implementation of the MRS algorithm for comparison across distri
   MRS effectively detects and characterizes a variety of underlying differences. 
   These differences can be visualized using several plotting functions.
 License: GPL (>= 3)
-Imports: Rcpp (>= 0.11.0), igraph, optimx
+Imports: Rcpp (>= 0.11.0), igraph
 Suggests: KernSmooth
 LinkingTo: Rcpp, RcppArmadillo
 NeedsCompilation: yes
-Packaged: 2016-07-21 03:19:27 UTC; jacopo
+Packaged: 2017-10-18 01:11:29 UTC; uganaga
 Repository: CRAN
-Date/Publication: 2016-07-21 19:06:29
+Date/Publication: 2017-10-18 03:27:01 UTC
