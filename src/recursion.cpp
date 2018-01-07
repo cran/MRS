@@ -974,7 +974,7 @@ void class_tree::save_index(  INDEX_TYPE& I,
   unsigned short x_curr = 0;
   unsigned short index_prev_var = 0;
   unsigned short lower = 0;
-  unsigned short x_curr_count = -1;
+  short x_curr_count = -1;
   cube_type new_cube;
   vector<side_type> new_sides;
   int i;  
@@ -985,7 +985,7 @@ void class_tree::save_index(  INDEX_TYPE& I,
       side_type new_side;
       new_side.var = x_curr; 
       new_side.extremes[0] = lower; 
-      new_side.extremes[1] =lower + ((unsigned int) 1 << (K-x_curr_count - 1)) - 1; 
+      new_side.extremes[1] = lower + ((unsigned int) 1 << (K-x_curr_count - 1)) - 1; 
       new_sides.push_back(new_side);
       lower = 0;
       x_curr_count = 0;
