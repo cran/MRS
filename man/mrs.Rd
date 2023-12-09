@@ -58,9 +58,9 @@ G = c(rep(1,n/2), rep(2,n/2))
 ans = mrs(X=X, G=G)
 }
 \references{
-Soriano J. and Ma L. (2016).
+Soriano J. and Ma L. (2017).
 Probabilistic multi-resolution scanning for two-sample differences.
  \emph{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}.
- \url{http://onlinelibrary.wiley.com/doi/10.1111/rssb.12180/abstract}
+ \doi{10.1111/rssb.12180}
 }
 

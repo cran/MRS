@@ -70,10 +70,11 @@ ans = andova(X, G, H)
 ans$PostGlobNull
 plot1D(ans)
 }
+
 \references{
-Ma L. and Soriano J. (2016).
+Ma L. and Soriano J. (2018).
 Analysis of distributional variation through multi-scale Beta-Binomial modeling.
- \emph{arXiv}.
- \url{http://arxiv.org/abs/1604.01443}
+ \emph{Journal of Computational and Graphical Statistics. Vol. 27, No. 3, 529-541.}.
+ \doi{10.1080/10618600.2017.1402774}
 }
 

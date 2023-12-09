@@ -55,7 +55,7 @@ plot1D <- function( ans,
                     main = "default",
                     abs = TRUE)
 {
-  if(class(ans)!="mrs")
+  !is(ans,"mrs")
   {
     print("ERROR: ans should be an MRS object.")
     return(0)

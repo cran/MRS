@@ -73,14 +73,14 @@ plot2D(ans, type="none", data.points = "differential",
  background = "smeared", levels = 4)
 }
 \references{
-Soriano J. and Ma L. (2016).
+Soriano J. and Ma L. (2017).
 Probabilistic multi-resolution scanning for two-sample differences.
  \emph{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}.
- \url{http://onlinelibrary.wiley.com/doi/10.1111/rssb.12180/abstract}
+  \doi{10.1111/rssb.12180}
 
-Ma L. and Soriano J. (2016).
+Ma L. and Soriano J. (2018).
 Analysis of distributional variation through multi-scale Beta-Binomial modeling.
- \emph{arXiv}.
- \url{http://arxiv.org/abs/1604.01443}
+ \emph{Journal of Computational and Graphical Statistics. Vol. 27, No. 3, 529-541.}.
+ \doi{10.1080/10618600.2017.1402774}
 }
 

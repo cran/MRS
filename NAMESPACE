@@ -1,4 +1,5 @@
 useDynLib(MRS, .registration = TRUE)
+importFrom("methods", "is")
 importFrom(Rcpp, evalCpp)
 importFrom(utils, head, tail)
 importFrom(grDevices, colorRampPalette)

@@ -45,7 +45,7 @@
 #' plotTree(ans, type = "prob", legend = TRUE)
 plotTree <- function(ans, type="prob", group = 1, legend = FALSE, main = "", node.size=5, abs = TRUE)
 {
-  if(class(ans)!="mrs")
+  !is(ans,"mrs")
   {
     print("ERROR: ans should be an mrs object.")
     return(0)
