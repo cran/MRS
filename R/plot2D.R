@@ -69,8 +69,7 @@ plot2D = function(  ans,
                     main = "default",
                     abs = TRUE ) 
 { 
-  !is(ans,"mrs")
-  {
+  if(!is(ans,"mrs")) {
     print("ERROR: ans should be an mrs object.")
     return(0)
   }

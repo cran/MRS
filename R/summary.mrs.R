@@ -36,8 +36,7 @@
 #' fit = summary(object, rho = 0.5, abs_eff = 0.1)
 summary.mrs <- function(object, rho = 0.5, abs_eff = 0, sort_by = "eff", ...)
 {
-  !is(object,"mrs")
-  {
+  if(!is(object,"mrs")) {
     print("ERROR: object should be a mrs object.")
     return(0)
   }

@@ -1,7 +1,7 @@
 Package: MRS
 Type: Package
 Title: Multi-Resolution Scanning for Cross-Sample Differences
-Version: 1.2.5
+Version: 1.2.6
 Date: 2023-12-09
 Author: Jacopo Soriano and Li Ma
 Maintainer: Li Ma <li.ma@duke.edu>
@@ -17,6 +17,6 @@ Imports: Rcpp (>= 0.11.0), igraph, methods
 Suggests: KernSmooth
 LinkingTo: Rcpp, RcppArmadillo
 NeedsCompilation: yes
-Packaged: 2023-12-09 22:07:33 UTC; lm186
+Packaged: 2023-12-10 01:42:06 UTC; lm186
 Repository: CRAN
-Date/Publication: 2023-12-09 22:20:02 UTC
+Date/Publication: 2023-12-11 13:10:12 UTC
